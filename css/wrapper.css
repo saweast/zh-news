@@ -10,7 +10,8 @@
 .hdr-banner {
 	display: block;
 	width: 100%;
-	height: 90px;
+	height: 91px;
+	margin-bottom: 15px;
 	border-bottom: 1px solid #dce9ff;
 }
 .banner-item {
@@ -22,11 +23,10 @@
 	overflow: visible;
 	float: left;
 	display: inline-block;
+	height: 90px;
 }
 .image-wrap img {
-	position: relative;
-	right: 0;
-	bottom: 0;
+	height: 90px;
 }
 .banner-item .desc-wrap {
 	width: 65%;
@@ -53,6 +53,7 @@
 	background: linear-gradient(#dce9ff,#4264ae);
 	position: relative;
 	z-index: 1;
+	font-size: 0.8em;
 }
 .desc-wrap a:hover {
 	background: linear-gradient(#FF9292,#d93e3e);
@@ -61,5 +62,69 @@
 
 
 .logo-to-date {
-	
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.logo-to-date:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.logo-to-date > div {
+	float: left;
+	margin-right: 20px;
+}
+.logo {
+	width: 35.3%;
+}
+.logo p {
+	font-family: 'Esqadero', sans-serif;
+	text-transform: uppercase;
+	text-align: justify;
+	color: #506998;
+	letter-spacing: 5px;
+}
+.logo p:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.nav-site {
+	width: 31%;
+}
+.nav-site li {
+	float: left;
+	width: 25%;
+	position: relative;
+	top: 15px;
+}
+.nav-site li:after {
+	content: '';
+	position: absolute;
+	-webkit-transform: rotate(12deg);
+	   -moz-transform: rotate(12deg);
+	    -ms-transform: rotate(12deg);
+	     -o-transform: rotate(12deg);
+	        transform: rotate(12deg);
+	height: 45px;
+	width: 1px;
+	background: #dce9ff;
+	top: -13px;
+	right: 0;
+}
+.nav-site li:last-child:after {
+	width: 0;
+	margin: 0;
+}
+.nav-site li a {
+	font-family: 'Noto sans', sans-serif;
+	font-weight: bold;
+	color: #506998;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+.nav-site li a:hover {
+	color: #d93e3e;
 }

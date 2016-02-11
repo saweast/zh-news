@@ -18,5 +18,8 @@ a:hover {
 	width: 100%;
 	margin: 15px auto 0;
 }
-
+@font-face {
+  font-family: "Esqadero";
+  src: '../font/Esqadero.ttf'
+}
 
