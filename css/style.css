@@ -1,6 +1,6 @@
-.container {
-	width: 1250px;
-	margin-top: 15px;
+.container-fluid {
+	margin: 15px auto 0;
+	max-width: 1250px;
 }
 .aside.col-md-2 {
 	width: 10.5%;
