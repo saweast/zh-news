@@ -127,11 +127,9 @@ li {
 }
 .banner-item {
 	font-size: 14px;
-	padding: 0;
 }
 .banner-item div.image-wrap {
 	box-sizing: border-box;
-	width: 30%;
 	float: left;
 	padding: 0;
 	overflow: hidden;
@@ -141,8 +139,6 @@ li {
 }
 .banner-item div {
 	box-sizing: border-box;
-	width: 70%;
-	float: right;
 	padding-left: 5px;
 }
 .banner-item h3 {
@@ -156,6 +152,7 @@ li {
 .banner-item p {
 	font-size: 12px;
 	color: #222222;
+	width: 180px;
 	font-family: 'Noto Sans', sans-serif;
 }
 .banner-item a {
@@ -175,4 +172,189 @@ li {
 	height: 1px;
 	background: #dce9ff;
 	margin-bottom: 15px;
+}
+
+
+
+@font-face {
+  font-family: 'Esqadero';
+  src: url('../font/Esqadero.ttf');
+}
+
+.logo-to-date {
+	position:relative;
+}
+.logo img {
+	margin: 0 0 15px;
+	width: 100%;
+}
+.logo p {
+	font-family: "Esqadero", sans-serif;
+	text-transform: uppercase;
+	text-align: justify;
+	color: #506998;
+	letter-spacing: 5px;
+	margin-bottom: 0;
+	height: 1.5em;
+}
+.logo p:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+header .nav-site {
+	color: #2954a7;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0;
+}
+header .nav-site li {
+	float: left;
+	position: relative;
+	margin: 0 10px;
+}
+header .nav-site ul {
+	padding: 0;
+	margin-top: 10px;
+}
+header .nav-site li:first-child:after {
+	width: 0;
+}
+header .nav-site li:after {
+	content: '';
+	width: 1px;
+	height: 45px;
+	left: -10px;
+	top: -15px;
+	-webkit-transform: rotate(12deg);
+	   -moz-transform: rotate(12deg);
+	    -ms-transform: rotate(12deg);
+	     -o-transform: rotate(12deg);
+	        transform: rotate(12deg);
+	display: inline-block;
+	background: #ecf3ff;
+	position: absolute;
+}
+header .nav-site a:hover {
+	color: #d62424;
+	text-decoration: none;
+}
+
+div.search {
+	background-image: url('../img/search-input.gif');
+	height: 40px;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	width: 20%;
+}
+input.search {
+	position: relative;
+	top: 10px;
+    left: 20px;
+    background: none;
+    outline: 0;
+    border: 0;
+    width: 85%;
+    font-family: "Scada", sans-serif;
+}
+div.search:before {
+	content: '';
+	height: 15px;
+	width: 15px;
+	background-image: url('../img/search.gif');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position:absolute;
+	top: 13px;
+    left: 20px;
+}
+.currency {
+	font-family: 'Noto sans', sans-serif;
+	position: absolute;
+	right: 17%;
+	top: 55px;
+	width: auto;
+}
+.currency * {
+	float: left;
+}
+.currency dl {
+	margin-bottom: 0;
+}
+.currency dd {
+	font-weight: 700;
+}
+.currency dt {
+	color: #dc5454;
+	font-weight: 400;
+	display: inline-block;
+	padding-right: 5px;
+}
+.date {
+	position: relative;
+	display: inline-block;
+	height: 70px;
+	width: 130px;
+	background-image: url('../img/date-block.gif');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: -5px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.date div {
+	position:relative;
+	font-weight: 700;
+	text-transform: uppercase
+}
+.date .month {
+	top: 15px;
+    left: 15px;
+	color: #fff;
+}
+.date .day {
+	top: -5px;
+	left: 50px;
+	color: #d62424;
+}
+.date .dat {
+	top: 0px;
+	left: 12px;
+	font-size: 1.2em;
+}
+.date .time {
+	top: -24px;
+    left: 60px;
+	font-size: 1.2em;
+}
+
+
+.nav li {
+	float: left;
+	padding: 0 7px;
+    height: 40px;
+    padding-top: 10px;
+}
+.nav {
+	background: linear-gradient(#677fbe, #2a4691);
+	height: 40px;
+}
+.nav ul {
+	padding: 0;
+}
+.nav a {
+	color: #fff;
+	font-family: "Scada", sans-serif;
+	text-transform: uppercase; 
+	font-weight: bold;
+	font-size: 15px;
+}
+.nav a:hover {
+	text-decoration: none;
+}
+.nav li:hover{
+	background: #d62424;
 }
