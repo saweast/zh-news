@@ -74,7 +74,7 @@
 }
 .logo-to-date > div {
 	float: left;
-	margin-right: 20px;
+	margin-right: 1.8%;
 }
 .logo {
 	width: 35.3%;
@@ -90,6 +90,9 @@
   content: "";
   display: inline-block;
   width: 100%;
+}
+.logo img {
+	width: 100%;
 }
 .nav-site {
 	width: 31%;
@@ -151,6 +154,7 @@
 	top: 15px;
     left: 35px;
 	outline: none;
+	width: calc(100% - 60px);
 }
 .currency {
 	position: absolute;
@@ -166,4 +170,43 @@
 	display: inline-block;
 	font-family: 'Noto sans', sans-serif;
 	font-weight: bold;
+}
+.logo-to-date .search {
+	margin-right: 5px;
+}
+.logo-to-date .date {
+	width: 11.5%;
+	margin-right: 0;
+	background-image: url('../img/date-block.gif');
+	background-repeat: no-repeat;
+	height: 67px;
+	position: relative;
+}
+.date div {
+	font-family: "Roboto condensed", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: absolute;
+	display: inline-block;
+	
+}
+.month {
+	top: 15px;
+    left: 15px;
+    color: white;
+}
+div.day {
+	color: #d93e3e;
+	top: 15px;
+    left: 47px;
+}
+.dat, .time {
+	font-size: 1.1em;
+    top: 42px;
+}
+.dat {
+	left: 13px;
+}
+.time {
+	left: 60px;
 }
