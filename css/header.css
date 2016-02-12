@@ -152,3 +152,18 @@
     left: 35px;
 	outline: none;
 }
+.currency {
+	position: absolute;
+    top: 48px;
+    right: 13.5%;
+}
+.currency dt {
+	display: inline-block;
+    color: #d93e3e;
+    font-family: 'Noto sans', sans-serif;
+}
+.currency dd {
+	display: inline-block;
+	font-family: 'Noto sans', sans-serif;
+	font-weight: bold;
+}
