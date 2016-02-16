@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/content.css">
+
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Scada:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    
 </head>
 
 <body>
@@ -192,7 +194,7 @@
                             <p>Сторінки:
                                 <a href="#" class="select">1</a>
                                 <a href="#">2</a>
-                                <a href="#">3</a> ... 
+                                <a href="#">3</a> ...
                                 <a href="#">25</a>
                                 <a href="#">26</a>
                                 <a href="#" class="next">наступна &rarr;</a>
@@ -210,7 +212,6 @@
                                 </div>
                                 <div class="cont">
                                     <p>Янукович взявся призначати суддів на Житомирщині <a href="" title="">Рупор Житомира</a></p>
-                                    
                                 </div>
                             </div>
                             <div class="item">
@@ -219,7 +220,6 @@
                                 </div>
                                 <div class="cont">
                                     <p>Янукович взявся призначати суддів на Житомирщині <a href="" title="">Рупор Житомира</a></p>
-                                    
                                 </div>
                             </div>
                             <div class="item">
@@ -228,7 +228,6 @@
                                 </div>
                                 <div class="cont">
                                     <p>Янукович взявся призначати суддів на Житомирщині <a href="" title="">Рупор Житомира</a></p>
-                                    
                                 </div>
                             </div>
                             <div class="item">
@@ -237,7 +236,6 @@
                                 </div>
                                 <div class="cont">
                                     <p>Янукович взявся призначати суддів на Житомирщині <a href="" title="">Рупор Житомира</a></p>
-                                    
                                 </div>
                             </div>
                             <div class="item">
@@ -246,10 +244,32 @@
                                 </div>
                                 <div class="cont">
                                     <p>Янукович взявся призначати суддів на Житомирщині <a href="" title="">Рупор Житомира</a></p>
-                                    
                                 </div>
                             </div>
-                            
+                        </div>
+                        <div id="main" role="main">
+                            <section class="slider">
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li data-thumb="img/images/kitchen_adventurer_cheesecake_brownie.jpg">
+                                            <img src="img/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                                            <p>some text1</p>
+                                        </li>
+                                        <li data-thumb="img/images/kitchen_adventurer_lemon.jpg">
+                                            <img src="img/images/kitchen_adventurer_lemon.jpg" />
+                                            <p>some text2</p>
+                                        </li>
+                                        <li data-thumb="img/images/kitchen_adventurer_donut.jpg">
+                                            <img src="img/images/kitchen_adventurer_donut.jpg" />
+                                            <p>some text3</p>
+                                        </li>
+                                        <li data-thumb="img/images/kitchen_adventurer_caramel.jpg">
+                                            <img src="img/images/kitchen_adventurer_caramel.jpg" />
+                                            <p>some text4</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
                     </aside>
                 </content>
@@ -257,6 +277,26 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        SyntaxHighlighter.all();
+    });
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails",
+            start: function(slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+    </script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script defer src="js/demo.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 
