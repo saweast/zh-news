@@ -281,7 +281,7 @@
 
 .aside-news-one {
     background: #f4f8ff;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .aside-news-one h3 {
@@ -339,6 +339,7 @@
 .aside-news-two {
     background: #5a73b4;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 .aside-news-two div {
@@ -392,4 +393,60 @@
     float: left;
     width: 65%;
     color: white;
+}
+
+.aside-opros {
+    background: #f4f8ff;
+    margin-bottom: 20px;
+}
+.opros-name {
+    background: linear-gradient(#677fbe, #2a4691);
+    padding: 10px 15px;
+    position: relative;
+}
+.opros-name:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.opros-name h4{
+    font-family: 'Noto sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    float: left;
+    text-transform: uppercase;
+}
+.opros-name a {
+    color: white;
+    float: right;
+}
+.form-wrap {
+    padding: 15px;
+    background-image: url('../img/opros.png');
+    background-size: 61%;
+    background-position: 118% 218%;
+}
+.form-wrap h4 {
+    color: #2a4691;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.aside-opros label {
+    display: block;
+    font-family: 'Noto sans', sans-serif;
+    margin-bottom: 10px;
+}
+.aside-opros input[type='radio'] {
+    margin-right: 10px;
+}
+.aside-opros button {
+    position: relative;
+    left: 60%;
+    padding: 5px 10px; 
+    background: linear-gradient(#FF9292, #d93e3e);
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    border: none;
 }
