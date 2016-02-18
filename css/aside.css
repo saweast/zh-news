@@ -16,7 +16,7 @@
 	position: relative;
 	margin-bottom: 10px;
 }
-.top-nav li:before {
+.top-nav li::before {
 	content: '';
 	height: 20px;
 	width: 20px;
@@ -31,28 +31,28 @@
 	float: left;
 	margin-right: 5px;
 }
-.lang li.ukr:before {
+.lang li.ukr::before {
 	width: 20px;
 	height: 1em;
 	background-image: url('../img/218px-Flag_of_Ukraine.svg.png');
 	top: 0;
 }
-.lang li.rus:before {
+.lang li.rus::before {
 	width: 20px;
 	height: 1em;
 	background-image: url('../img/218px-Flag_of_Russia.svg.png');
 	top: 0;
 }
-.rss:before {
+.rss::before {
 	background-image: url('../img/png/rss.png');
 }
-.mob:before {
+.mob::before {
 	background-image: url('../img/mob-ver.gif');
 }
-.login:before {
+.login::before {
 	background-image: url('../img/enter.gif');
 }
-.signin:before {
+.signin::before {
 	background-image: url('../img/signin.gif');
 }
 

@@ -37,7 +37,7 @@
     padding: 20px 30px;
 }
 
-.text-block:after {
+.text-block::after {
     content: '';
     height: 26px;
     width: 25px;
@@ -59,7 +59,7 @@
     font-size: 1.2em;
 }
 
-.text-block h3:before {
+.text-block h3::before {
     content: '';
     position: absolute;
     left: -10px;
@@ -123,7 +123,7 @@
     margin-bottom: 25px;
 }
 
-.short .item:after {
+.short .item::after {
     content: "";
     clear: both;
     display: table;
@@ -148,7 +148,7 @@
     position: relative;
 }
 
-.cont a:before {
+.cont a::before {
     content: '';
     height: 4px;
     width: 4px;
@@ -172,7 +172,7 @@
     position: relative;
 }
 
-.slides img:after {
+.slides img::after {
     content: "";
     clear: both;
     display: table;
@@ -216,7 +216,7 @@
     top: 95px;
 }
 
-.slides p:before {
+.slides p::before {
     content: "” ";
     display: inline-block;
     position: static;
@@ -224,7 +224,7 @@
     font-weight: bold;
 }
 
-.slides p:after {
+.slides p::after {
     content: " „";
     display: inline-block;
     position: static;
@@ -241,7 +241,7 @@
     color: white;
 }
 
-.slides .author:before {
+.slides .author::before {
     content: '';
     width: 3px;
     height: 10px;
@@ -251,7 +251,7 @@
 }
 
 .flex-control-thumbs li {
-    width: 32%
+    width: 32%;
 }
 
 .flex-control-thumbs li:first-child {
@@ -380,7 +380,7 @@
     width: 30%;
 }
 
-.aside-news-two figure:after {
+.aside-news-two figure::after {
     content: "";
     clear: both;
     display: table;
@@ -399,50 +399,59 @@
     background: #f4f8ff;
     margin-bottom: 20px;
 }
+
 .opros-name {
     background: linear-gradient(#677fbe, #2a4691);
     padding: 10px 15px;
     position: relative;
 }
-.opros-name:after {
+
+.opros-name::after {
     content: "";
     clear: both;
     display: table;
 }
-.opros-name h4{
+
+.opros-name h4 {
     font-family: 'Noto sans', sans-serif;
     font-weight: bold;
     color: white;
     float: left;
     text-transform: uppercase;
 }
+
 .opros-name a {
     color: white;
     float: right;
 }
+
 .form-wrap {
     padding: 15px;
     background-image: url('../img/opros.png');
     background-size: 61%;
     background-position: 118% 218%;
 }
+
 .form-wrap h4 {
     color: #2a4691;
     margin-bottom: 20px;
     font-size: 1.2em;
 }
+
 .aside-opros label {
     display: block;
     font-family: 'Noto sans', sans-serif;
     margin-bottom: 10px;
 }
+
 .aside-opros input[type='radio'] {
     margin-right: 10px;
 }
+
 .aside-opros button {
     position: relative;
     left: 60%;
-    padding: 5px 10px; 
+    padding: 5px 10px;
     background: linear-gradient(#FF9292, #d93e3e);
     border-radius: 7px;
     font-weight: bold;
@@ -458,9 +467,10 @@
     background: #f4f8ff;
     z-index: -2;
 }
+
 .aside-afisha h4 {
     position: absolute;
-    padding: 5px 10px; 
+    padding: 5px 10px;
     font-family: 'Noto sans', sans-serif;
     background: linear-gradient(#FF9292, #d93e3e);
     font-weight: bold;
@@ -468,85 +478,104 @@
     color: white;
     z-index: 1;
 }
+
 .aside-afisha figure.first {
     margin: -15px;
     margin-bottom: 0;
     background: linear-gradient(rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.29));
 }
+
 .aside-afisha figure {
     position: relative;
 }
-.aside-afisha figure:after {
+
+.aside-afisha figure::after {
     content: "";
     clear: both;
     display: table;
 }
+
 .aside-afisha figure img {
     position: relative;
     z-index: -1;
 }
+
 figure.first figcaption {
     position: absolute;
     z-index: 1;
     bottom: 15px;
     left: 15px;
 }
+
 figure.first figcaption p {
     font-size: 1.2em;
 }
+
 figure.first figcaption p,
 figure.first figcaption span {
     font-weight: bold;
     color: white;
 }
-figure.first figcaption span:before {
+
+figure.first figcaption span::before {
     content: '';
     margin-top: 15px;
     margin-bottom: 5px;
     height: 1px;
     background: #d93e3e;
     width: 33%;
-    display: block; 
+    display: block;
 }
+
 figure.second:last-child {
     border-bottom: none;
     padding-bottom: 0;
 }
+
 figure.second {
     padding-bottom: 15px;
     padding-top: 15px;
     border-bottom: 1px solid white;
 }
+
 figure.second img {
-    float:left;
+    float: left;
 }
+
 figure.second figcaption {
     float: right;
 }
+
 figure.second img {
     width: 30%;
     margin-right: 5%;
 }
+
 figure.second figcaption {
     width: 65%;
 }
+
 figure.second span {
     color: #d93e3e;
 }
+
 figure.second p {
     font-weight: bold;
     color: #2a4691;
 }
-content {
+
+section {
     display: block;
 }
-aside:after,
-content:after {
+
+aside::after,
+section::after {
     content: "";
     clear: both;
     display: table;
 }
-.soc-networks:before {
+
+.soc-networks::before {
     content: "";
     clear: both;
     display: table;
