@@ -10,6 +10,13 @@
 	color: #525252;
 	list-style: none;
 }
+figure, figcaption {
+	margin: 0;
+	padding: 0;
+}
+figure img {
+	width: 100%;
+}
 a:hover {
 	color: #d93e3e;
 }

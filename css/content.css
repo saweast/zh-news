@@ -450,3 +450,104 @@
     outline: none;
     border: none;
 }
+
+.aside-afisha {
+    margin-bottom: 20px;
+    position: relative;
+    padding: 15px;
+    background: #f4f8ff;
+    z-index: -2;
+}
+.aside-afisha h4 {
+    position: absolute;
+    padding: 5px 10px; 
+    font-family: 'Noto sans', sans-serif;
+    background: linear-gradient(#FF9292, #d93e3e);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+}
+.aside-afisha figure.first {
+    margin: -15px;
+    margin-bottom: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.29));
+}
+.aside-afisha figure {
+    position: relative;
+}
+.aside-afisha figure:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.aside-afisha figure img {
+    position: relative;
+    z-index: -1;
+}
+figure.first figcaption {
+    position: absolute;
+    z-index: 1;
+    bottom: 15px;
+    left: 15px;
+}
+figure.first figcaption p {
+    font-size: 1.2em;
+}
+figure.first figcaption p,
+figure.first figcaption span {
+    font-weight: bold;
+    color: white;
+}
+figure.first figcaption span:before {
+    content: '';
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 1px;
+    background: #d93e3e;
+    width: 33%;
+    display: block; 
+}
+figure.second:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+figure.second {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid white;
+}
+figure.second img {
+    float:left;
+}
+figure.second figcaption {
+    float: right;
+}
+figure.second img {
+    width: 30%;
+    margin-right: 5%;
+}
+figure.second figcaption {
+    width: 65%;
+}
+figure.second span {
+    color: #d93e3e;
+}
+figure.second p {
+    font-weight: bold;
+    color: #2a4691;
+}
+content {
+    display: block;
+}
+aside:after,
+content:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.soc-networks:before {
+    content: "";
+    clear: both;
+    display: table;
+}
