@@ -1,65 +1,63 @@
 footer {
-	border-top: 3px solid #2954a7;
-	background: #f4f8ff;
-	margin: 0 -15px;
-	padding: 0 15px;
-	padding-top: 40px;
+  margin: 0 -15px;
+  padding: 0 15px;
+  padding-top: 40px;
+  border-top: 3px solid #2954a7;
+  background: #f4f8ff;
 }
 footer li a:hover {
-	color: #2954a7;
-	text-decoration: underline;
+  text-decoration: underline;
+  color: #2954a7;
 }
-.foot-nav::after,
-.menu::after {
-	content: '';
-	display: table;
-	clear: both;
+.foot-nav::after, .menu::after {
+  display: table;
+  clear: both;
+  content: '';
 }
 .foot-nav {
-	padding-bottom: 20px;
-	border-bottom: 1px solid #dce9ff;
-	width: 90%;
-	margin-bottom: 15px;
+  width: 90%;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dce9ff;
 }
 .foot-nav li {
-	float: left;
-	margin-right: 25px;
+  float: left;
+  margin-right: 25px;
 }
 .foot-nav li a {
-	text-transform: uppercase;
-	color: #222222;
-	font-family: 'Noto sans', sans-serif;
-	font-weight: bold;
+  text-transform: uppercase;
+  color: #222222;
+  font-family: 'Noto sans', sans-serif;
+  font-weight: bold;
 }
 .menu {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .menu li {
-	float: left;
-	margin-right: 45px;
+  float: left;
+  margin-right: 45px;
 }
 .menu li a {
-	color: #222222;
-	font-weight: bold;
+  color: #222222;
+  font-weight: bold;
 }
 .alrights {
-	width: 70%;
-	float: left;
+  float: left;
+  width: 70%;
 }
-.alrights p,
-.copy p{
-	color: #333333;
-	font-family: 'Noto sans', sans-serif;
-	font-size: .8em;
+.alrights p, .copy p {
+  color: #333333;
+  font-family: 'Noto sans', sans-serif;
+  font-size: .8em;
 }
 .copy {
-	width: 30%;
-	float: right;
-    text-align: right;
-    margin-top: 30px;
+  float: right;
+  width: 30%;
+  margin-top: 30px;
+  text-align: right;
 }
 footer::after {
-	content: '';
-	display: table;
-	clear: both;
+  display: table;
+  clear: both;
+  content: '';
 }
