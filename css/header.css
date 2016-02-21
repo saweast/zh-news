@@ -36,6 +36,8 @@ header {
 }
 
 .banner-item .desc-wrap {
+    position: relative;
+    z-index: 1;
     display: inline-block;
     width: 65%;
     padding-left: 5px;
@@ -44,7 +46,7 @@ header {
 .desc-wrap h3 {
     font-size: 1em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     color: #4264ae;
 }
 
@@ -52,7 +54,7 @@ header {
     font-family: 'Noto sans', sans-serif;
     font-size: .8em;
     width: 180px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .desc-wrap a {
@@ -242,8 +244,8 @@ div.day {
     color: #d93e3e;
 }
 
-.dat,
-.time {
+.date .dat,
+.date .time {
     font-size: 1.1em;
     top: 42px;
 }
@@ -288,4 +290,25 @@ div.day {
     display: inline-block;
     width: 100%;
     content: '';
+}
+
+
+@media (max-width: 1150px) and (min-width: 1000px) {
+    .nav-site li a {
+        font-size: 10px;
+    }
+    .month {
+        font-size: 12px;
+        left: 13px;
+    }
+    div.day {
+        font-size: 12px;
+        left: 35px;
+    }
+    .dat {
+        left: 8px;
+    }
+    .time {
+        left: 42px;
+    }
 }
