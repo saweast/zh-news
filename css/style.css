@@ -1,31 +1,37 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  color: #525252;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  font-family: 'Scada', sans-serif;
-  font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #525252;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Scada', sans-serif;
+    font-size: 14px;
 }
-figure, figcaption {
-  margin: 0;
-  padding: 0;
+
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
 }
+
 figure img {
-  width: 100%;
+    width: 100%;
 }
+
 a:hover {
-  color: #d93e3e;
+    color: #d93e3e;
 }
+
 .container {
-  width: 100%;
-  max-width: 1250px;
-  margin: 15px auto 0;
+    width: 100%;
+    max-width: 1250px;
+    margin: 15px auto 0;
 }
+
 @font-face {
-  font-family: "Esqadero";
-  src: "../font/Esqadero.ttf";
+    font-family: "Esqadero";
+    src: "../font/Esqadero.ttf";
 }
