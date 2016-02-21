@@ -13,7 +13,6 @@ header {
 .hdr-banner {
     display: block;
     width: 100%;
-    height: 91px;
     margin-bottom: 15px;
     border-bottom: 1px solid #dce9ff;
 }
@@ -292,6 +291,18 @@ div.day {
     content: '';
 }
 
+.nav-site:after,
+.hdr-banner::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.nav > ul:nth-child(1)::after {
+    display: table;
+    clear: both;
+    content: '';
+}
 
 @media (max-width: 1150px) and (min-width: 1000px) {
     .nav-site li a {
@@ -310,5 +321,56 @@ div.day {
     }
     .time {
         left: 42px;
+    }
+}
+
+@media (max-width: 999px) and (min-width: 769px) {
+    .banner-item {
+        width: calc(100% / 4 * 2);
+    }
+    .logo-to-date .logo {
+        float: left;
+        width: 70%;
+        margin-right: 0;
+    }
+    .logo-to-date .nav-site {
+        float: left;
+        width: 65%;
+        margin-right: 0;
+    }
+    .logo-to-date .search {
+        float: right;
+        width: 33%;
+        margin-right: 0;
+    }
+    .logo-to-date .currency {
+        position: static;
+        float: right;
+    }
+    .logo-to-date .date {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 130px;
+        margin-top: 10px;
+    }
+    .nav-site li::after {
+        top: 0;
+        height: 25px;
+    }
+    .nav-site li {
+        line-height: 25px;
+        text-align: center;
+    }
+    .logo-to-date {
+        margin-bottom: 15px;
+    }
+    .logo p {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 892px) and (min-width: 769px) {
+    .nav li {
+        font-size: 11px;
     }
 }
