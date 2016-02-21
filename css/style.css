@@ -35,3 +35,13 @@ a:hover {
     font-family: "Esqadero";
     src: "../font/Esqadero.ttf";
 }
+.blue-button {
+    background: -webkit-linear-gradient(#dce9ff, #4264ae);
+    background: -o-linear-gradient(#dce9ff, #4264ae);
+    background: linear-gradient(#dce9ff, #4264ae);
+}
+.blue-button:hover {
+    background: -webkit-linear-gradient(#a3b8f0, #627cc1);
+    background: -o-linear-gradient(#a3b8f0, #627cc1);
+    background: linear-gradient(#a3b8f0, #627cc1);
+}

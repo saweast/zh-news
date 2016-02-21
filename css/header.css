@@ -70,9 +70,9 @@ header {
 
 .desc-wrap a:hover {
     color: white;
-    background: -webkit-linear-gradient(#ff9292, #d93e3e);
-    background: -o-linear-gradient(#ff9292, #d93e3e);
-    background: linear-gradient(#ff9292, #d93e3e);
+    background: -webkit-linear-gradient(#a3b8f0, #627cc1);
+    background: -o-linear-gradient(#a3b8f0, #627cc1);
+    background: linear-gradient(#a3b8f0, #627cc1);
 }
 
 .logo-to-date {
@@ -259,7 +259,7 @@ div.day {
 .nav {
     display: block;
     height: 40px;
-    background: linear-gradient(#dce9ff, #4264ae);
+    background: linear-gradient(#677fbe, #2a4691);
 }
 
 .nav li {
@@ -281,7 +281,7 @@ div.day {
 }
 
 .nav a:hover {
-    background: linear-gradient(#ff9292, #d93e3e);
+    background: linear-gradient(#8299d6, #5b74b4);
 }
 
 .nav li:last-child::after {
