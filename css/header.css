@@ -12,6 +12,7 @@ header {
 
 .hdr-banner {
     display: block;
+    position: relative;
     width: 100%;
     margin-bottom: 15px;
     border-bottom: 1px solid #dce9ff;
@@ -24,9 +25,11 @@ header {
 
 .banner-item .image-wrap {
     display: inline-block;
+    position: absolute;
+    bottom: 0;
     float: left;
     overflow: visible;
-    width: 35%;
+    width: auto;
     height: 90px;
 }
 
@@ -40,6 +43,7 @@ header {
     display: inline-block;
     width: 65%;
     padding-left: 5px;
+    float: right;
 }
 
 .desc-wrap h3 {
@@ -57,6 +61,7 @@ header {
 }
 
 .desc-wrap a {
+    display: inline-block;
     font-size: .8em;
     position: relative;
     z-index: 1;
@@ -124,12 +129,15 @@ header {
     position: relative;
     float: left;
     width: 25%;
+    text-align: center;
+    display:table;
+    height: 40px;
 }
 
 .nav-site li::after {
     position: absolute;
-    top: -4px;
-    right: 3px;
+    /*top: -4px;*/
+    /*right: 3px;*/
     width: 1px;
     height: 45px;
     content: '';
@@ -150,15 +158,17 @@ header {
     text-align: center;
     text-transform: uppercase;
     color: #506998;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .nav-site li {
     font-size: 0;
-    line-height: 40px;
+    /*line-height: 40px;*/
 }
 
 .nav-site li a {
-    display: inline-block;
+    /*display: inline-block;*/
     vertical-align: middle;
 }
 
@@ -369,6 +379,7 @@ div.day {
         font-size: 1.2em;
     }
 }
+
 @media (max-width: 892px) and (min-width: 769px) {
     .nav li {
         font-size: 11px;

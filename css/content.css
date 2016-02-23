@@ -224,12 +224,14 @@
     position: absolute;
     top: -120px;
     top: 95px;
+    top: calc(50% - 10px);
     left: 15px;
     display: inline-block;
     max-width: 80%;
     padding: 10px 15px;
     color: white;
     background: url('../img/p-bg.png') no-repeat 100% 100%;
+    background-size: 100% 100%;
 }
 
 .slides p::before {
@@ -255,6 +257,7 @@
     left: 15px;
     width: 100%;
     color: white;
+    top: calc(90% - 10px);
 }
 
 .slides .author::before {
@@ -459,7 +462,7 @@
 
 .form-wrap {
     padding: 15px;
-    background-image: url('../img/opros.png');
+    /*background-image: url('../img/opros.png');*/
     background-position: 118% 218%;
     background-size: 61%;
 }
@@ -490,10 +493,16 @@
     border-radius: 4px;
     outline: none;
     background: linear-gradient(#ff9292, #d93e3e);
+
 }
 
 .aside-opros button:hover {
     background: linear-gradient(#ff9f9d, #e55156);
+    
+}
+
+.aside-opros button:hover ~ .form-wrap {
+    background-image: url('../img/opros.png');
 }
 
 .aside-afisha {
