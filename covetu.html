@@ -322,7 +322,9 @@
                             <input type="radio" name='opros'>Помірне ставлення</label>
                         <label>
                             <input type="radio" name='opros'>Я про це не думав</label>
-                        <button type="submit">Проголосувати</button>
+                        <button type="submit">Проголосувати
+                            <div class="opros-hover"></div>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -396,7 +398,7 @@
     <script defer src="js/jquery.flexslider.js"></script>
     <script type="text/javascript">
     $(function() {
-        SyntaxHighlighter.all();
+        // SyntaxHighlighter.all();
     })
     $(window).load(function() {
         $('.flexslider').flexslider({

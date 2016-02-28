@@ -254,10 +254,10 @@
     font-style: italic;
     position: absolute;
     top: 185px;
+    top: calc(90% - 10px);
     left: 15px;
     width: 100%;
     color: white;
-    top: calc(90% - 10px);
 }
 
 .slides .author::before {
@@ -461,6 +461,8 @@
 }
 
 .form-wrap {
+    z-index: -2;
+    overflow: hidden;
     padding: 15px;
     /*background-image: url('../img/opros.png');*/
     background-position: 118% 218%;
@@ -475,17 +477,20 @@
 
 .aside-opros label {
     font-family: 'Noto sans', sans-serif;
+    z-index: 1;
     display: block;
     margin-bottom: 10px;
 }
 
 .aside-opros input[type='radio'] {
+    z-index: 1;
     margin-right: 10px;
 }
 
 .aside-opros button {
     font-weight: bold;
     position: relative;
+    z-index: 1;
     left: 60%;
     padding: 5px 10px;
     color: white;
@@ -493,16 +498,31 @@
     border-radius: 4px;
     outline: none;
     background: linear-gradient(#ff9292, #d93e3e);
-
 }
 
 .aside-opros button:hover {
+    z-index: 1;
     background: linear-gradient(#ff9f9d, #e55156);
-    
 }
 
-.aside-opros button:hover ~ .form-wrap {
+.opros-hover {
+    position: absolute;
+    z-index: -1;
+    top: -12px;
+    left: 38px;
+    width: 50px;
+    height: 50px;
+    transition: .1s ease .1s;
+    opacity: 0;
     background-image: url('../img/opros.png');
+}
+
+.aside-opros button:hover .opros-hover {
+    top: -95px;
+    left: -53px;
+    width: 225px;
+    height: 225px;
+    opacity: 1;
 }
 
 .aside-afisha {
@@ -626,9 +646,7 @@ section::after {
     content: '';
 }
 
-
 @media (max-width: 1150px) and (min-width: 1000px) {
-    
     .short .item {
         margin: 15px 10px;
     }
@@ -637,30 +655,30 @@ section::after {
         font-size: .8em;
         padding: 10px;
     }
-     .slides p {
+    .slides p {
         font-size: .8em;
         top: 70px;
     }
-     .slides .author {
+    .slides .author {
         top: 145px;
     }
-     .aside-news-two h3 {
+    .aside-news-two h3 {
         font-size: .9em;
     }
-     .aside-news-two h3 span {
+    .aside-news-two h3 span {
         padding-left: 5px;
     }
-     .aside-news-two a {
+    .aside-news-two a {
         font-size: .8em;
         padding: 3px;
     }
-     .aside-news-two figure img {
+    .aside-news-two figure img {
         margin-right: 5%;
     }
-     .aside-news-two figcaption {
+    .aside-news-two figcaption {
         padding: 5% 15px 0 0;
     }
-    .aside-opros  button {
+    .aside-opros button {
         left: 50%;
     }
     .form-wrap {
