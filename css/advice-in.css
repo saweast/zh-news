@@ -137,3 +137,17 @@ img {
 	display: table;
 	clear: both;
 }
+.media-news div {
+	width: 47%;
+	display: inline-block;
+	float: left;
+	margin: 0 2%;
+}
+.media-news div:last-child {
+	margin-left: 0;
+}
+.media-news div:last-child::after {
+	content: "";
+	display: table;
+	clear: both;
+}
