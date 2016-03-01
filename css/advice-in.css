@@ -1,0 +1,139 @@
+img {
+	width: 100%;
+}
+.news {
+	border-top: 1px solid #dce9ff;
+}
+.news-content {
+	display: inline-block;
+	float: left;
+	width: 66%;
+	margin-right: 3%;
+}
+.news-aside {
+	display: inline-block;
+	float:right;
+	width: 31%;
+}
+.news h2 {
+	margin: 25px 0;
+	font-weight: bold;
+	font-size: 1.8em;
+	color: #222;
+	width: 73%;
+	float: left;
+}
+.news .pub-time {
+	float: right;
+	padding: 12px;
+	background-color: #e9f1ff;
+	color: #666;
+}
+.news .soc-retweets {
+	margin: 25px 0;
+}
+.news-text .main {
+	background-color: #f4f8ff;
+	color: #2954a7;
+	border-left: 2px solid #d62424;
+	padding: 15px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+.news-text p {
+	margin-bottom: 25px;
+}
+.news-text .italic {
+	padding-left: 40px;
+	font-style: italic;
+}
+.news-text .bold {
+	padding-left: 40px;
+	font-weight: bold;
+}
+.news-text .make-retweets {
+	margin: 20px 0;
+}
+.tags {
+	padding: 20px 0px 20px 20px;
+	border-top: 1px solid #dce9ff;
+	border-bottom: 1px solid #dce9ff;
+}
+.tags {
+	color: #222;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.tags span {
+	position: relative;
+}
+.tags span::before {
+	content: "";
+	left: -20px;
+	top: -2px;
+	height: 22px;
+	width: 13px;
+	position: absolute;
+	display: inline-block;
+	background-image: url("../img/tag-before.png");
+}
+.tags a {
+	color: #2954a7;
+}
+.tags a:hover {
+	text-decoration: underline;
+}
+.simply-news {
+	position: relative;
+}
+.simply-news h3 {
+	font-family: "Noto sans", sans-serif;
+	position: relative;
+    padding: 10px 15px;
+    background: linear-gradient(#677fbe, #2a4691);
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.simply-news .line::after {
+	content: "";
+	width: calc(100% - 194px);
+	background-color: #4963a8;
+	height: 3px;
+	display: inline-block;
+	position: relative;
+	float: right;
+	top: 18px;
+}
+.simply-news-item {
+	margin-bottom: 20px;
+}
+.simply-news-item ul {
+	padding: 0;
+	margin: 0;
+}
+.simply-news-item a {
+	color: #222;
+	font-family: "Noto-sans", sans-serif;
+}
+.simply-news-item a:hover {
+	text-decoration: underline;
+}
+.simply-news-item .time {
+	float: left;
+	width: 18%;
+	text-align: center;
+	color: #999;
+}
+.simply-news-item .desc {
+	float:left;
+	width: calc(100% - 18%);
+}
+.simply-news-item::after,
+.simply-news::after {
+	content: "";
+	display: table;
+	clear: both;
+}
