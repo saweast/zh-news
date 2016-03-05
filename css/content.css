@@ -219,13 +219,10 @@
 }
 
 .slides p {
+    font-size: 1.1em;
     font-weight: bold;
-    position: relative;
     position: absolute;
-    top: -120px;
-    top: 95px;
-    top: calc(50% - 10px);
-    left: 15px;
+    bottom: calc(20% - 10px);
     display: inline-block;
     max-width: 80%;
     padding: 10px 15px;
@@ -249,11 +246,16 @@
     content: ' „';
     color: white;
 }
-
+.flex-viewport {
+    margin-bottom: 10px;
+}
+.flex-control-thumbs img {
+    height: 60px;
+    width: 100%;
+}
 .slides .author {
     font-style: italic;
     position: absolute;
-    top: 185px;
     top: calc(90% - 10px);
     left: 15px;
     width: 100%;
@@ -282,14 +284,21 @@
 }
 
 .flex-control-thumbs img.flex-active {
+    position: relative;
+    box-sizing: content-box;
     padding-bottom: 3px;
-    transition: 0s;
     border-bottom: 3px solid #d62424;
+    transition: 0s linear 0s;
 }
 
 .flexslider {
     margin-bottom: 25px;
     border: none;
+}
+
+.flexslider .slides img {
+    width: auto;
+    height: 295px;
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev,
